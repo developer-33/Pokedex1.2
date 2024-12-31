@@ -26,7 +26,7 @@ const Pokedex = () => {
   );
 
   return (
-    <div className={`${darkMode ? "dark" : ""} min-h-screen bg-gray-100 dark:bg-gray-900`}>
+    <div className={`${darkMode ? "dark" : ""} min-h-screen bg-red-700 dark:bg-black text-black dark:text-white transition-colors`}>
       <div className="p-4">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
@@ -46,12 +46,12 @@ const Pokedex = () => {
           <input
             type="text"
             placeholder="Search Pokémon..."
-            className="w-full md:w-1/2 px-4 py-2 border rounded glass dark:text-white dark:placeholder-gray-300"
+            className="w-full md:w-1/2 px-4 py-2 border rounded glass text-black dark:text-black dark:placeholder-yellow-700"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <select
-            className="w-full md:w-1/4 px-4 py-2 border rounded glass dark:text-white"
+            className="w-full md:w-1/4 px-4 py-2 border rounded glass dark:text-black"
             value={generation}
             onChange={(e) => setGeneration(e.target.value)}
           >
